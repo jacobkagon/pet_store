@@ -1,0 +1,11 @@
+<h1>List of Pets:</h1>
+<div>
+  <%@pets.each do |pet|%>
+<div>
+ <ul>
+
+<li><%=link_to pet.species, pet_path(pet.id)%></div></li>
+
+<%end%>
+</ul>
+</div>
