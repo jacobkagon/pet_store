@@ -7,5 +7,9 @@ class PetsController < ApplicationController
     @pet = Animal.find(params[:id])
     end
 
+    def species
+       @species = Animal.where(species: params[:species])
+    end
+
 
 end

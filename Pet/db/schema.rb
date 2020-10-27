@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_27_191500) do
+ActiveRecord::Schema.define(version: 2020_10_27_204247) do
 
   create_table "animals", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_10_27_191500) do
     t.boolean "good_with_kids"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_url"
   end
 
 end
